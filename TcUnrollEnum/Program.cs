@@ -90,7 +90,7 @@ namespace TcUnrollEnum
 		{
 			for (int i = 0; i < states.Length; i++)
 			{
-				states[i] = fileName + '.' + states[i] + ':';
+				states[i] = fileName + '.' + states[i] + ": ";
 			}
 			return states;
 		}
