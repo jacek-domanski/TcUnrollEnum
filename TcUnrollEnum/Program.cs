@@ -66,7 +66,7 @@ namespace TcUnrollEnum
 
 		static string[] getStates(string fileName, string fileContents)
 		{
-			string notStatesPattern = @".*TYPE\s+S_EP_\s*:\s*\(|\)\s*;.*?END_TYPE.*|\s+";
+			string notStatesPattern = @".*TYPE\s+" + fileName + @"\s*:\s*\(|\)\s*;.*?END_TYPE.*|\s+";
 			fileContents = Regex.Replace(fileContents, notStatesPattern, "", RegexOptions.Singleline);
 
 			string assignmentPattern = @":=.*?,";
